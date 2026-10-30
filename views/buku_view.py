@@ -36,6 +36,10 @@ class BukuView(ctk.CTk):
         self.btn_delete = ctk.CTkButton(self.frame_kiri, text="Hapus Data", fg_color="red")
         self.btn_delete.pack(pady=10, padx=15, fill="x")
 
+        # Penempatan tombol Logout disesuaikan agar rapi di bawah tombol aksi
+        self.btn_logout = ctk.CTkButton(self.frame_kiri, text="Logout", fg_color="gray")
+        self.btn_logout.pack(pady=10, padx=15, fill="x")
+
         # Frame Kanan (Tabel)
         self.frame_kanan = ctk.CTkFrame(self)
         self.frame_kanan.grid(row=0, column=1, padx=10, pady=10, sticky="nsew")
